@@ -7,8 +7,10 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
-@Data @NoArgsConstructor @AllArgsConstructor @Builder
+@Entity //table en base donnes
+@Data //get setters and getters
+@NoArgsConstructor @AllArgsConstructor
+@Builder //cree les attributs sans ordre
 public class AppRole {
     @Id
     private String role;
